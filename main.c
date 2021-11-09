@@ -54,7 +54,8 @@ int main(int argc,char**argv)
 {
   Wc total={0};
 
-  if(argc<2)count(stdout,NULL);
+  if(argc<2)
+	  total=count(stdin,NULL);
   else
 	{
 	  for(size_t i=1;i<argc;++i)
